@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub-creds'       
-        IMAGE_REPO = "ayahamouda/my-node-app:V1"
+        IMAGE_REPO = "ayahamouda/my-node-app"
         IMAGE_TAG  = "${BUILD_NUMBER}" 
     }
 
