@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub-creds'       
-        IMAGE_REPO = "3booda24/nodejs8"
+        IMAGE_REPO = "ayahamouda/my-node-app:V1"
         IMAGE_TAG  = "${BUILD_NUMBER}" 
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'Master', url: 'https://github.com/abdelrahmanonline4/GitOps-ci-cd-with-Jenkins-and-Argocd'
+                git branch: 'Master', url: 'https://github.com/Aya-Hamouda/GitOps-ci-cd-with-Jenkins-and-Argocd'
             }
         }
 
