@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: project-k8s12
-        image: ayahamouda/my-node-app:V1
+        image: ayahamouda/my-node-app:${IMAGE_TAG}
         ports:
         - containerPort: 3000
 
